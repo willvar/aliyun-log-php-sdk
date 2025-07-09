@@ -78,7 +78,7 @@ class Aliyun_Log_Client {
         string $accessKeyId = "",
         string $accessKey = "",
         string $token = "",
-        Aliyun_Log_Models_CredentialsProvider $credentialsProvider = null
+        ?Aliyun_Log_Models_CredentialsProvider $credentialsProvider = null
     ) {
         $this->setEndpoint($endpoint); // set $this->logHost
         if (!is_null($credentialsProvider)) {
